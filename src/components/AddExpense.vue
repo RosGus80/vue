@@ -31,6 +31,9 @@ const postExpense = () => {
 
     newExpenseName.value = '';
     newExpenseAmount.value = null;
+
+    amountError.value = null;
+    nameError.value = null;
 }
 
 </script>

@@ -19,7 +19,8 @@ export const storage = defineStore('expenses', {
         },
 
         deleteExpense(id) {
-            this.expenses.splice(id, 1);
+            const expense = this.expenses.find(e => e.id === id);
+            this.expenses.splice(expense.id, 1);
         }
     },
 
